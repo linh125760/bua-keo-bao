@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background: #4a4a4a;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(130, 183, 61);
+    color: white;
+    height: 100px;
+    line-height: 100px;
+}
+
+section {
+    margin-top: 50px !important;
+}
+
+.score-board {
+    padding: 15px 50px;
+    width: 250px;
+    margin: 0 auto;
+    border: 2px solid white;
+    font-size: 3rem;
+    color: white;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    padding: 5px 10px;
+    background-color: orange;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.human {
+    left: -22px;
+}
+
+.bot {
+    right: -22px;
+}
+
+.result {
+    color: white;
+    font-size: 2rem;
+}
+
+.choose {
+    display: flex;
+    justify-content: center;
+}
+
+.choice {
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.choice:nth-child(2) {
+    margin: 0 30px;
+}
+
+.active {
+    transform: scale(1.2);
+}
+
+.bot-choose .choice {
+    pointer-events: none;  
+}
